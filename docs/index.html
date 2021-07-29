@@ -11,6 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <!-- Theme 主题设置 [vue.css] [buble.css] [dark.css] [pure.css] -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+
   <!-- Plugin gitalk 
   <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
   -->
@@ -19,31 +20,48 @@
   <!-- loading显示的文字 -->
   <div id="app">Loading...</div>
   <script>
+
     window.$docsify = {
       // ************************* Configuration *************************
       // https://docsify.js.org/#/zh-cn/configuration
-      homepage: 'homepage',
-      // name: '',
+      // homepage: 'homepage.md',
+      name: 'teckbond',
       repo: 'teckbond/UserGuide',
-      maxLevel: 3,
+      maxLevel: 4,
       subMaxLevel: 3,
       loadSidebar: true,
-      loadNavbar: true,
+      loadNavbar: false,
       mergeNavbar: true,
       notFoundPage: true,
       coverpage: ['/', '/en/'],
-      onlyCover: true,
+      onlyCover: false,
       auto2top: true,
 
       // ************************* Plugins *************************
       // https://docsify.js.org/#/zh-cn/plugins
       // 全文搜索 - Search
-      search: 'auto',
+      search: {
+          noData: {
+            '/': '没有结果!',
+            '/en/': 'No results!',
+          },
+          paths: 'auto',
+          placeholder: {
+            '/': '搜索',
+            '/en/': 'Search',
+          },
+          pathNamespaces: ['/en']
+        },
     }
   </script>
   <!-- Docsify -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
   
+  <!-- Import mermaid -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-mermaid/dist/docsify-mermaid.js"> </script>
+  <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({ startOnLoad: true });</script>
+
   <!-- ************************* Plugins ************************* -->
   <!-- Plugins：全文搜索 -->
   <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
