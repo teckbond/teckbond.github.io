@@ -6,8 +6,6 @@
 
 坦克邦是紫光展锐的官方线上平台。我们向所有使用展锐芯片、展锐芯模块的客户和生态伙伴提供[产品展示宣传](/productsales.md)、销售机会引流、[工程师培训](/techtrain.md)、客户技术支持、生态资源合作等一系列原厂服务。
 
-查看[注册认证](/registration.md)注册帐号并开始您的坦克邦之旅吧。
-
 <figure>
     <figcaption>播放坦克邦介绍音频:</figcaption>
     <audio
@@ -18,7 +16,7 @@
     </audio
 </figure>
 
-
+查看[注册认证](/registration.md)页面，注册一个帐号并开始您的坦克邦之旅吧。
 
 ## 特性
 
