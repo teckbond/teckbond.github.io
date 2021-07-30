@@ -12,15 +12,12 @@
   <!-- Theme 主题设置 [vue.css] [buble.css] [dark.css] [pure.css] -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
 
-  <!-- Plugin gitalk 
-  <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
-  -->
 </head>
 <body>
   <!-- loading显示的文字 -->
   <div id="app">Loading...</div>
-  <script>
 
+  <script>
     window.$docsify = {
       // ************************* Configuration *************************
       // https://docsify.js.org/#/zh-cn/configuration
@@ -58,6 +55,28 @@
             color:'rgb(90,90,90)',
             language:'chinese'
         },
+
+        // 评论插件：https://livere.com/
+        plugins: [
+        function (hook, vm) {
+          // load livere
+          hook.beforeEach(function(content) {
+              var comment = "<div id='lv-container' data-id='city' data-uid='MTAyMC81MzY2NC8zMDEzNw=='></div>\n\n----\n"
+              return content + comment;
+          });
+
+          hook.doneEach(function() {
+             (function(d, s) {
+                 var j, e = d.getElementsByTagName(s)[0];
+                 if (typeof LivereTower === 'function') { return; }
+                 j = d.createElement(s);
+                 j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                 j.async = true;
+                 e.parentNode.insertBefore(j, e);
+             })(document, 'script');
+          });
+        },
+      ]
     }
   </script>
   <!-- Docsify -->
@@ -77,21 +96,5 @@
   <!-- Plugins：字数统计 -->
   <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
 
-  <!-- Plugins：gitalk 
-  <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
-  <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
-  <script>
-      const gitalk = new Gitalk({
-          clientID: '',
-          clientSecret: '',
-          repo: 'teckbond/gitalk-comment',
-          owner: 'teckbond',
-          admin: ['teckbond'],
-          // id: '{{ page.url | truncate: 50, '' }}',
-          distractionFreeMode: false // Facebook-like distraction free mode
-      })
-      gitalk.render('gitalk-container')
-  </script>
-  -->
 </body>
 </html>
