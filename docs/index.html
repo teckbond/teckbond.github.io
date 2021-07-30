@@ -21,7 +21,7 @@
     window.$docsify = {
       // ************************* Configuration *************************
       // https://docsify.js.org/#/zh-cn/configuration
-      name: 'teckbond',
+      name: 'teckbond help',
       maxLevel: 4,
       subMaxLevel: 3,
       loadSidebar: true,
@@ -54,6 +54,14 @@
             fontsize:'0.9em',
             color:'rgb(90,90,90)',
             language:'chinese'
+        },
+
+        // 页脚
+        footer: {
+            copy: '<span>Copyright &copy; 2021 &nbsp 💖 &nbsp</span>',
+            auth: ' <strong><a href="https://teckbond.xyz" target="_blank">TeckBond Help</a></strong>',
+            pre: '<hr/>,
+            style: 'font-size: 18px; text-align: center;',
         },
 
         // 评论插件：https://livere.com/
@@ -95,6 +103,39 @@
   
   <!-- Plugins：字数统计 -->
   <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+
+  <!-- Plugins回到顶部功能 -->
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.goup.js"></script>
+  <script type="text/javascript">
+     $(document).ready(function () {
+       $.goup({
+         trigger: 100,
+         bottomOffset: 52,
+         locationOffset: 25,
+         title: 'TOP',
+         titleAsText: true
+       });
+     });
+  </script>
+
+  <!-- 页脚 -->
+  <script src="//unpkg.com/docsify-footer-enh/dist/docsify-footer-enh.min.js"></script>
+
+  <!-- PWA -->
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+        navigator.serviceWorker.register('sw.js')
+    }
+  </script>
+
+  <!--即时通讯聊天室-->
+  <script>
+    ((window.gitter = {}).chat = {}).options = {
+    room: 'teckbond_usergroup/community'
+    };
+  </script>
+  <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 
 </body>
 </html>
