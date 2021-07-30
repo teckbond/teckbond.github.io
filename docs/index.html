@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <!-- 网站标题 -->
-  <title>Teckbond User Guide</title>
+  <title>坦克邦在线帮助</title>
   <!-- 网站icon -->
   <link rel="icon" href="./favicon.ico">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -12,16 +12,17 @@
   <!-- Theme 主题设置 [vue.css] [buble.css] [dark.css] [pure.css] -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
 
+
 </head>
 <body>
   <!-- loading显示的文字 -->
-  <div id="app">Loading...</div>
+  <div id="app">页面正在加载，请稍后……</div>
 
   <script>
     window.$docsify = {
       // ************************* Configuration *************************
       // https://docsify.js.org/#/zh-cn/configuration
-      name: 'teckbond help',
+      name: '坦克邦在线帮助',
       maxLevel: 4,
       subMaxLevel: 3,
       loadSidebar: true,
@@ -31,6 +32,11 @@
       coverpage: ['/', '/en/'],
       onlyCover: false,
       auto2top: true,
+      externalLinkTarget: '_blank',
+
+      // 页脚信息插件
+      loadFooter: true,
+      loadFooter: '_footer.md',
 
       // ************************* Plugins *************************
       // https://docsify.js.org/#/zh-cn/plugins
@@ -56,12 +62,12 @@
             language:'chinese'
         },
 
-        // 页脚
-        footer: {
-            copy: '<span>Copyright &copy; 2021 &nbsp 💖 &nbsp</span>',
-            auth: ' <strong><a href="https://teckbond.xyz" target="_blank">TeckBond Help</a></strong>',
-            pre: '<hr/>',
-            style: 'font-size: 18px; text-align: center;',
+        // 翻页
+        pagination: {
+            previousText: '上一篇',
+            nextText: '下一篇',
+            crossChapter: true,
+            crossChapterText: true,
         },
 
         // 评论插件：https://livere.com/
@@ -119,8 +125,14 @@
      });
   </script>
 
-  <!-- 页脚 -->
-  <script src="//unpkg.com/docsify-footer-enh/dist/docsify-footer-enh.min.js"></script>
+  <!-- 访问量统计 -->
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  <!-- 页脚信息 -->
+  <script src="//cdn.jsdelivr.net/npm/@alertbox/docsify-footer/dist/docsify-footer.min.js"></script>
+
+  <!-- 翻页 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
 
   <!-- PWA -->
   <script>
