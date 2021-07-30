@@ -21,7 +21,7 @@
 
 ####  密码注册
 
-1. 打开坦克邦首页，点击右上角`注册`按钮，进入[注册页面](https://www.teckbond.cn/#/home/registerPage)。
+1. 打开坦克邦首页，点击右上角`注册`按钮，进入[注册页面](https://www.teckbond.com/portal/html/#/home/registerPage?ex=1334379650155085825)。
 
 ![](registration.assets/reg01.png)
 
