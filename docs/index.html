@@ -35,6 +35,7 @@
       auto2top: true,
       autoHeader: true,
       externalLinkTarget: '_blank',
+      themeColor: '#3F51B5',
 
       // 页脚信息插件
       loadFooter: true,
@@ -67,7 +68,7 @@
             previousText: '上一篇',
             nextText: '下一篇',
             crossChapter: true,
-            crossChapterText: true,
+            crossChapterText: false,
         },
 
         <!-- 自定义挂件 -->
@@ -83,7 +84,7 @@
         plugins: [
             function(hook, vm) {
                 hook.beforeEach(function(html) {
-                    return (html + '\n----\n' + '本页更新时间: {docsify-updated} ');
+                    return ('\n----\n' + html + '\n----\n' + '<p align="right">上次更新: {docsify-updated}</p> ');
                 });
             }
         ]
