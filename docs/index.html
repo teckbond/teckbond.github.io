@@ -84,11 +84,9 @@
         },
 
         scrollToTop: {
-            auto: true,
-            text: '🔼',
-            right: 15,
-            bottom: 15,
-            offset: 500
+            title: '回到顶部',
+            bottom: 75,
+            color: '#0D1F8F'
         },
 
         <!-- 最后更新时间 -->
@@ -143,7 +141,7 @@
   <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
 
   <!-- Plugins回到顶部功能 -->
-  <script src="//unpkg.com/docsify-scroll-to-top/dist/docsify-scroll-to-top.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/rxmapple/docsify-scroll-to-top@master/src/docsify-scroll-to-top.js"></script>
 
   <!-- 访问量统计 -->
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -176,6 +174,17 @@
   </script>
   <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
   -->
+
+  <!--即时通讯-->
+  <script type="text/javascript">
+    window.$crisp=[];window.CRISP_WEBSITE_ID="49b76eb1-8dd9-4d44-a154-4efdb22a377f";
+    (function(){
+        d=document;
+        s=d.createElement("script");
+        s.src="https://client.crisp.chat/l.js";
+        s.async=1;
+        d.getElementsByTagName("head")[0].appendChild(s);})();
+  </script>
 
 </body>
 </html>
