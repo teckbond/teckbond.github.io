@@ -82,6 +82,14 @@
             height: 80
         },
 
+        scrollToTop: {
+            auto: true,
+            text: 'Top',
+            right: 15,
+            bottom: 50,
+            offset: 500
+        },
+
         <!-- 最后更新时间 -->
         plugins: [
             function(hook, vm) {
@@ -134,19 +142,7 @@
   <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
 
   <!-- Plugins回到顶部功能 -->
-  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.goup.js"></script>
-  <script type="text/javascript">
-     $(document).ready(function () {
-       $.goup({
-         trigger: 100,
-         bottomOffset: 52,
-         locationOffset: 25,
-         title: 'TOP',
-         titleAsText: true
-       });
-     });
-  </script>
+  <script src="//unpkg.com/docsify-scroll-to-top/dist/docsify-scroll-to-top.min.js"></script>
 
   <!-- 访问量统计 -->
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -171,13 +167,14 @@
     }
   </script>
 
-  <!--即时通讯聊天室-->
+  <!--即时通讯聊天室
   <script>
     ((window.gitter = {}).chat = {}).options = {
     room: 'teckbond_usergroup/community'
     };
   </script>
   <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+  -->
 
 </body>
 </html>
