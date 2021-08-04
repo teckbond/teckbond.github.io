@@ -8,7 +8,8 @@
   <link rel="icon" href="./favicon.ico">
   <link rel="manifest" href="./manifest.json">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
+  <meta name="keywords" content="坦克邦,坦克邦帮助,Teckbond help,Teckbond UserGuide,坦克邦用户指南">
+  <meta name="description" content="坦克邦用户指南，包括注册、认证、发悬赏、接悬赏等">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <!-- Theme 主题设置 [vue.css] [buble.css] [dark.css] [pure.css]-->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
@@ -81,6 +82,28 @@
             icon: './assets/logo-corner.svg',
             width: 80,
             height: 80
+        },
+
+        flexibleAlerts: {
+            note: {
+                label: "备注"
+            },
+            tip: {
+                label: "提示"
+            },
+            warning: {
+                label: "注意"
+            },
+            attention: {
+                label: "禁止"
+            }
+
+        },
+
+        copyCode: {
+            buttonText: '点击复制',
+            errorText: '错误',
+            successText: '已复制'
         },
 
         scrollToTop: {
@@ -178,6 +201,12 @@
 
   <!-- 最后更新时间 -->
   <script src="//cdn.jsdelivr.net/npm/tinydate@1.3.0/dist/tinydate.min.js"></script>
+
+  <!-- 提醒 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-plugin-flexible-alerts"></script>
+
+  <!-- 代码复制 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
 
 
   <!-- 深色主题
