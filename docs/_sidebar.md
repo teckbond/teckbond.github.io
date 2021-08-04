@@ -19,5 +19,3 @@
 - 技术合作
   - [技术文库](/techdoc.md)
   - [技术学院](/techtrain.md)
-
-
