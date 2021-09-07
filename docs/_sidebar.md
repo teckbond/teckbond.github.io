@@ -7,6 +7,7 @@
   - [注册认证](/registration.md)
 
 - 商务合作
+  - [产品拍卖](/productauction.md)
   - [产品销售](/productsales.md)
   - [方案合作](/partnership.md)
 
