@@ -1,8 +1,10 @@
-<p align = "left"><img src= "_coverpage.assets/unisoc_logo.png"  style="zoom:20%;" /></p>
+<div align=left>
 
-  
-  
-[![](_coverpage.assets/teckbond_logo.png ':size=20%')](https://www.teckbond.com)
+![](_coverpage.assets/unisoc_logo.png ':size=15%')
+
+</div>
+
+[![](_coverpage.assets/teckbond_logo.png ':size=30%')](https://www.teckbond.com)
 
 # 坦克邦
 
