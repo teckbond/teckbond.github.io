@@ -2,7 +2,7 @@
     "markdownlint.config": {
         "MD024": false,
         "MD033": {
-            "allowed_elements": [ "p","center", "span", "figure", "figcaption", "code" ]
+            "allowed_elements": [ "div", "p", "center", "span", "figure", "figcaption", "code" ]
           },
         "MD041": false,
         "MD045": false,
