@@ -1,4 +1,8 @@
-![](_coverpage.assets/teckbond_logo.png ':size=20%')
+<p align = "left"><img src= "_coverpage.assets/unisoc_logo.png"  style="zoom:20%;" /></p>
+
+  
+  
+[![](_coverpage.assets/teckbond_logo.png ':size=20%')](https://www.teckbond.com)
 
 # 坦克邦
 
